@@ -208,17 +208,22 @@ The calculations below follow the assignment specification. Thresholds are confi
 
 For each district and indicator, compare the current month with the previous available observation for that district:
 
-\[
-\text{Change (\%)} =
-\frac{\text{Current Value} - \text{Previous Value}}
-{\text{Previous Value}} \times 100
-\]
+Formula:
+
+Percentage Change = ((Current Value - Previous Value) / Previous Value) * 100
+
+Example:
+
+Previous ANC coverage = 85
+
+Current ANC coverage = 69
+
+Change = ((69 - 85) / 85) * 100
+
+Result = -18.82%
 
 **Example from the supplied sample:** Ahmedabad ANC coverage changed from 85 in July to 69 in August.
 
-\[
-\frac{69 - 85}{85} \times 100 \approx -18.8\%
-\]
 
 With the default threshold of 10%, the change is flagged because its absolute percentage change is at least 10%.
 
@@ -228,17 +233,11 @@ If the previous value is zero or missing, the percentage change is undefined and
 
 For each numerical indicator, calculate the first quartile (Q1), third quartile (Q3), and interquartile range:
 
-\[
 IQR = Q3 - Q1
-\]
 
-\[
-\text{Lower Bound} = Q1 - 1.5 \times IQR
-\]
+Lower Bound = Q1 - (1.5 * IQR)
 
-\[
-\text{Upper Bound} = Q3 + 1.5 \times IQR
-\]
+Upper Bound = Q3 + (1.5 * IQR)
 
 A value is flagged as a potential outlier if it is below the lower bound or above the upper bound. The multiplier is configurable in the UI.
 
