@@ -174,13 +174,13 @@ The main dashboard shows the uploaded or bundled dataset, configurable threshold
 
 The insights table shows structured findings with their type, indicator, district, period, current and previous values, percentage change, severity, and explanation.
 
-![Generated insights table](screenshots/insights_table.png)
+![Generated insights table](screenshots/genral_insights.png)
 
 ### 3. Insights by severity
 
 This chart summarizes how many generated findings fall into each configured review-priority category.
 
-![Insights by severity](screenshots/insights_by_severity.png)
+![Insights by severity](screenshots/insight_by_severity.png)
 
 ### 4. Correlation analysis
 
@@ -196,7 +196,7 @@ Use the indicator selector in the app to explore monthly values across districts
 
 ![Institutional delivery by district](screenshots/institutional_delivery.png)
 
-![Immunization by district](screenshots/immunization.png)
+![Immunization by district](screenshots/imunization.png)
 
 ![High-risk cases by district](screenshots/high_risk_cases.png)
 
