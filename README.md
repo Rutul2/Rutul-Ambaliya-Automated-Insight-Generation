@@ -196,7 +196,7 @@ Use the indicator selector in the app to explore monthly values across districts
 
 ![Institutional delivery by district](screenshots/institutional_delivery.png)
 
-![Immunization by district](screenshots/immunization.png)
+![Immunization by district](screenshots/imunization.png)
 
 ![High-risk cases by district](screenshots/high_risk_cases.png)
 
